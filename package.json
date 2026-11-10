@@ -1,0 +1,36 @@
+{
+    "name": "ctgrzd-cntnt-copier-by-mimo",
+    "displayName": "Ctgrizd Content Copier By Mimo",
+    "description": "Copy the exact contents of grouped project files to the clipboard as organized Markdown, ready to paste into an AI chat.",
+    "version": "0.1.0",
+    "publisher": "your-publisher-id",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:categorizedContentCopier.copyContent"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "categorizedContentCopier.copyContent",
+                "title": "Copy content of files  by mimo"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.30",
+        "@types/vscode": "^1.85.0",
+        "typescript": "^5.4.5"
+    }
+}
